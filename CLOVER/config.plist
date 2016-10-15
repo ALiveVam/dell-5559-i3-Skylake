@@ -10,6 +10,11 @@
 			<false/>
 			<key>DropOEM_DSM</key>
 			<false/>
+			<key>Fixes</key>
+			<dict>
+				<key>FixSATA_0400</key>
+				<true/>
+			</dict>
 			<key>Name</key>
 			<string>DSDT.aml</string>
 			<key>Patches</key>
@@ -32,7 +37,7 @@
 					<key>Comment</key>
 					<string>change EHC1 to EH01</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>
 					RUhDMQ==
@@ -46,7 +51,7 @@
 					<key>Comment</key>
 					<string>change EHC2 to EH02</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>
 					RUhDMg==
@@ -72,7 +77,7 @@
 		<key>SSDT</key>
 		<dict>
 			<key>DropOem</key>
-			<true/>
+			<false/>
 			<key>Generate</key>
 			<false/>
 			<key>PluginType</key>
@@ -188,7 +193,7 @@
 				<false/>
 				<key>Find</key>
 				<data>
-				gxnUEQ==
+				YgLsEA==
 				</data>
 				<key>Name</key>
 				<string>AppleHDA</string>
@@ -220,6 +225,22 @@
 				<false/>
 				<key>Find</key>
 				<data>
+				gxnUEQ==
+				</data>
+				<key>Name</key>
+				<string>AppleHDA</string>
+				<key>Replace</key>
+				<data>
+				AAAAAA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Expect 2 matches</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
 				YQLsEA==
 				</data>
 				<key>Name</key>
@@ -237,22 +258,6 @@
 				<key>Find</key>
 				<data>
 				hQjsEA==
-				</data>
-				<key>Name</key>
-				<string>AppleHDA</string>
-				<key>Replace</key>
-				<data>
-				AAAAAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Expect 2 matches</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				YgLsEA==
 				</data>
 				<key>Name</key>
 				<string>AppleHDA</string>
